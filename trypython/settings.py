@@ -26,7 +26,7 @@ SECRET_KEY = 'uu@=qfbtu2s8iw+sgc0b$$ee7taw0zcgke7^()1)379h6nz^6e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['trypythoncolinlochalamoi.herokuapp.com']
 
 
 # Application definition
