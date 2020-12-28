@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -81,10 +84,10 @@ WSGI_APPLICATION = 'trypython.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trypython',
-        'USER': 'postgres', 
-        'PASSWORD': 'root', 
-        'HOTST': 'localhost',
+        'NAME': 'trypythoncolinlochalamoi',
+        'USER': 'mfszwlabfisbxo', 
+        'PASSWORD': '5d1824537cde00f8f1a3170199176c4e6709992df1467b3d6fd9f15bcc8c00c0', 
+        'HOTST': 'ec2-54-211-99-192.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
